@@ -10,7 +10,7 @@ latex : sbc-template.tex images
 	latex sbc-template.tex
 	latex sbc-template.tex
 
-images: fig1.eps fig2.eps table.eps robotwar.eps
+images: fig1.eps fig2.eps table.eps robotwar.eps pyrobocode.eps
 
 fig1.eps: fig1.jpg
 	convert fig1.jpg fig1.eps
@@ -24,5 +24,8 @@ table.eps: table.jpg
 robotwar.eps: robotwar.png
 	convert robotwar.png robotwar.eps
 
+pyrobocode.eps: pyrobocode.png
+	convert pyrobocode.png pyrobocode.eps
+
 clean :
-	rm *.aux *.bbl *.blg *.dvi *.log *.pdf *.ps *.toc *~ *.lof *.glo *.gls *.ilg *.ist *.glg
+	rm *.aux *.bbl *.blg *.dvi *.log *.pdf *.ps *.toc *~ *.lof *.glo *.gls *.ilg *.ist *.glg *.eps

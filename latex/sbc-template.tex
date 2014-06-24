@@ -93,8 +93,59 @@ por definir o gênero.
 \centering
 \includegraphics[width=.8\textwidth]{robotwar.eps}
 \caption{Tela do jogo RobotWar, de 1970, citado na sessão ~\ref{sec:environ}.}
-\label{fig:exampleFig2}
+\label{fig:robotwarfig}
 \end{figure}
+
+Em uma arena de robôs, temos uma área quadrada (a arena propriamente) onde
+robôs tentam se destruir. Cada robô é capaz de se locomover, disparar e
+girar o canhão. Somando-se a isso uma forma de perceber presença/localização
+dos oponentes, cada jogador participante deve escrever o código-fonte da
+ação que o robô deverá desempenhar na arena visando a destruir os demais.
+
+\subsection{Arenas de Robôs em Python}
+
+Para o nosso experimento, precisávamos de uma ferramenta de "arena de robôs"
+que funcionasse para Python e que fosse facilmente utilizada pelos alunos.
+Foram encontradas e analisadas algumas soluções:
+
+\begin{itemize}
+  \item \textbf{PythonRobocode} (PythonBots): Utiliza PyGame e apresenta uma interface
+  bem acabada. Em testes, porém, não foi possível chegar ao momento dos
+  combates. O aplicativo travou antes disso. \cite{pythonbots}
+  \item \textbf{Python-Robocode}: Interface gráfica em PyQt4 oferece boas opções,
+  mas muitas ainda não funcionais, o que tende a confundir o usuário. \cite{pythonrc}
+  \item \textbf{pyRobocode}: Ainda não disponibilizou nenhum código \cite{pyrc}
+  \item \textbf{PyDroids}: Ainda não disponibilizaou nenhum código \cite{pydroids}
+  \item \textbf{pybotwar}: Usa PyQt4 e outras bibliotecas que não são facilmente
+  encontradas/instaladas \cite{pybotwar}
+  \item \textbf{Py Robocode}: Criado por Jurgis Pralgauskis e publicado inicialmente
+  em 2009, não oferece funcionalidades via interface gráfica, resumindo-se
+  a montar, quando executado, a arena com todos os robôs que estejam salvos
+  em uma determinada pasta. Apesar de simples, o fato de funcionar sem
+  problemas e sem maiores dependências (utiliza apenas a biblioteca Tkinter)
+  pesou muito em sua escolha \cite{pyrobocode}
+\end{itemize}
+
+Para construir um robô no Py Robocode, é necessário criar um arquivo de
+código-fonte em Python e representar o robô através de uma classe que herda
+seu comportamento da classe Bot. O único método que precisa ser implementado
+é o método tatics, que será evocado pelo py-robocode a cada iteração do
+combate.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=.65\textwidth]{pyrobocode.eps}
+\caption{Py Robocode em execução.}
+\label{fig:pyrobocodefig}
+\end{figure}
+
+De dentro desse método tatics é possível acessar informações sobre os robôs
+que estão lutando, o que inclui estado do canhão (se está atirando), ângulo
+e posicionamento, este já adaptado para um plano cartesiano, de modo que o
+eixo da Ordenada cresce de baixo para cima e não de cima para baixo, e o
+ponto central da arena sendo marcado como o (0, 0). O jogador precisa, com
+base nessas informações, definir a estratégia de ação que leve seu robô à
+vitória, eliminando os demais.
 
 \section{Metodologia}
 
