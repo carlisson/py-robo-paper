@@ -163,11 +163,11 @@ tipos de valor, expressões, estruturas de decisão e de repetição. O conteúdo
 foi distribuído pela manhã de três dias seguidos (segunda a quarta-feira)
 e na sexta seria aplicada uma avaliação dos conhecimentos adquiridos.
 
-Além da avaliação final, a inscrição dos alunos envolveu uma pesquisa
-rápida para que pudéssemos mensurar seu conhecimento prévio, além do
-aceite de um Termo de Consentimento, que informava aos alunos que eles
-estariam participando de um experimento que objetivava a melhoria do ensino
-de disciplinas de Programação.
+Além da avaliação final, os alunos responderam a um questionário no início
+do Minicurso para que pudéssemos mensurar seu conhecimento prévio. A inscrição
+dos alunos envolveu o aceite de um Termo de Consentimento, que informava
+aos alunos que eles estariam participando de um experimento que objetivava
+a melhoria do ensino de disciplinas de Programação.
 
 O minicurso seria aplicado duas vezes: primeiro para o grupo de controle;
 na semana seguinte, para o outro grupo. No caso do segundo grupo, o
@@ -287,9 +287,90 @@ da primeira turma, subindo para 25\% da segunda turma.
 \begin{figure}[ht]
 \centering
 \includegraphics[width=.9\textwidth]{g-conhec.eps}
-\caption{Gráfico correspondente à tabela ~\ref{tab:tabAvalConhec}.}
+\caption{Comparativo do conhecimento demonstrado na avaliação.}
 \label{fig:grafAvalConhec}
 \end{figure}
+
+Ao atentarmos para as notas na avaliação (Tabela \ref{tab:tabAvalNotas},
+em média as notas da segunda turma (a que foi apresentada ao Py Robocode)
+foi maior. Tanto a maior nota quanto a menor da turma, porém, foram de
+algum aluno da primeira turma.
+
+Assim, constatou-se um desempenho consideravelmente melhor na segunda
+turma, apoiando o uso de uma ferramenta de jogo voltada a Programação.
+
+\begin{table}[ht]
+\centering
+\caption{Resultado da avaliação com base nas notas}
+\label{tab:tabAvalNotas}
+\includegraphics[width=.9\textwidth]{avaliacao-notas.eps}
+\end{table}
+
+\section{Discussão dos Resultados}\label{sec:dres}
+
+O questionario inicial nos trouxe o perfil dos participantes do experimento
+de maneira simples. A primeira questão (Tabela \ref{tab:tabQuest1}) nos
+mostrou que havia interesse nos alunos pelo aprendizado de Programação.
+Dado que o Minicurso de Python era uma oferta de extensão, apenas os alunos
+interessados se inscreveram. Além de criar seus próprios programas (realidade
+para 60\% dos participantes), os alunos também almejam criar suas próprias
+empresas de tecnologia (35\%) ou mesmo trabalhar em uma grande empresa na
+área (como um dos participantes escreveu na opção subjetiva).
+
+A segunda questão da pesquisa inicial (Tabela \ref{tab:tabQuest2}) mostrou
+que um número considerável de alunos já teve algum contato anterior com
+alguma linguagem de programação: cerca de 47\%. O índice seria menos
+preocupante se fosse bem distribuído entre as turmas A e B. O fato de
+73\% dos participantes da primeira turma não ter esse conhecimento prévio
+e, na segunda, tal índice baixar para meros 17\% se apresenta como o
+primeiro fato com potencial de comprometer os resultados deste trabalho,
+uma vez que não temos meio de medir qualitativamente esse conhecimento
+prévio e, assim, calcularmos o quanto influenciou no melhor desempenho
+da segunda turma.
+
+Quanto aos estilos de jogo, Arena de Robôs pode ser classificado como um
+gênero de Estratégia e Simulação, com um pouco de Puzzle, o que o coloca,
+dentre as opções da terceira questão da pesquisa (Tabela \ref{tab:tabQuest3}),
+na opção \textbf{b}, tendo a opção \textbf{d} como secundária. Vendo desta
+forma, a solução Py Robocode teria maior apelo para 35\% dos participantes.
+No caso da segunda turma, a razão de alunos com gosto por jogos de Estratégia,
+RPG e Simulação sobe para 50\%, favorecendo o uso da ferramenta.
+
+Outro aspecto preocupante para o experimento foi a baixa participação dos
+inscritos selecionados para a segunda turma: 55\% participaram, contra
+100\% da primeira turma. Disto, tivemos que comparar resultados entre grupos
+de quantidades diferentes de membros. Mais que isso, desconhecendo o perfil
+dos outros 45\%, é bem possível que fosse composto, em grande parte, por
+leigos, o que diminuiria a diferença de conhecimento prévio entre as duas
+turmas, caso houvessem participado.
+
+Um segundo ponto que pode nos levar a questionar os resultados do experimento
+foi a falta de participação no torneio de Arena de Robôs. Apesar de a
+ferramenta ter sido explicada e fornecida para os participantes da segunda
+turma, nenhum robô foi construído. A alegação dos participantes foi que
+haveria uma avaliação importante do curso no período da tarde do mesmo dia,
+o que exigiu dedicação e estudo por parte deles, de modo a não terem tido
+tempo para se dedicarem aos robôs.
+
+\section{Conclusão e Trabalhos Futuros}\label{sec:concl}
+
+Qualquer coisa.
+
+\section{References}\label{sec:ref}
+
+Bibliographic references must be unambiguous and uniform.  We recommend giving
+the author names references in brackets, e.g. \cite{knuth:84},
+\cite{boulic:91}, and \cite{smith:99}.
+
+The references must be listed using 12 point font size, with 6 points of space
+before each reference. The first line of each reference should not be
+indented, while the subsequent should be indented by 0.5 cm.
+
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
+
+\end{document}
+
 
 %\begin{figure}[ht]
 %\centering
@@ -319,44 +400,9 @@ da primeira turma, subindo para 25\% da segunda turma.
 %\includegraphics[width=.9\textwidth]{avaliacao-conhecimento.eps}
 %\end{table}
 
-\begin{table}[ht]
-\centering
-\caption{Resultado da avaliação com base nas notas}
-\label{tab:tabAvalNotas}
-\includegraphics[width=.9\textwidth]{avaliacao-notas.eps}
-\end{table}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=.9\textwidth]{g-notas.eps}
-\caption{Gráfico correspondente à tabela ~\ref{tab:tabAvalNotas}.}
-\label{fig:grafAvalNotas}
-\end{figure}
-
-\section{Discussão dos Resultados}
-
-All images and illustrations should be in black-and-white, or gray tones,
-excepting for the papers that will be electronically available (on CD-ROMs,
-internet, etc.). The image resolution on paper should be about 600 dpi for
-black-and-white images, and 150-300 dpi for grayscale images.  Do not include
-images with excessive resolution, as they may take hours to print, without any
-visible difference in the result. 
-
-\section{Conclusão e Trabalhos Futuros}
-
-Qualquer coisa.
-
-\section{References}
-
-Bibliographic references must be unambiguous and uniform.  We recommend giving
-the author names references in brackets, e.g. \cite{knuth:84},
-\cite{boulic:91}, and \cite{smith:99}.
-
-The references must be listed using 12 point font size, with 6 points of space
-before each reference. The first line of each reference should not be
-indented, while the subsequent should be indented by 0.5 cm.
-
-\bibliographystyle{sbc}
-\bibliography{sbc-template}
-
-\end{document}
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[width=.9\textwidth]{g-notas.eps}
+%\caption{Gráfico correspondente à tabela ~\ref{tab:tabAvalNotas}.}
+%\label{fig:grafAvalNotas}
+%\end{figure}
