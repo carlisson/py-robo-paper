@@ -12,7 +12,7 @@ latex : sbc-template.tex images
 
 images: telas tabelas graficos
 
-telas: robotwar.eps pyrobocode.eps
+telas: codesplit.eps robotwar.eps pyrobocode.eps
 
 tabelas: avaliacao-conhecimento.eps avaliacao-notas.eps questao1.eps questao2.eps questao3.eps
 
@@ -50,6 +50,9 @@ g-conhec.eps: graficos/graf-avalicacao-conhecimento.png
 
 g-notas.eps: graficos/graf-avalicacao-notas.png
 	convert graficos/graf-avalicacao-notas.png g-notas.eps
+
+codesplit.eps: telas/code-randsplit.png
+	convert telas/code-randsplit.png codesplit.eps
 
 robotwar.eps: telas/robotwar.png
 	convert telas/robotwar.png robotwar.eps

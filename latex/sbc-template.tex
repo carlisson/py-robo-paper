@@ -178,8 +178,15 @@ forma, a competição ocorreria após a avaliação, na sexta-feira.
 
 Recebemos 22 respostas ao convite para o Minicurso. Dividimos os 22
 inscritos em duas turmas de 11. Para essa divisão, foi utilizado um
-script em Python, de maneira que fosse feita de maneira aleatória.
-(incluir foto do código)
+script em Python (veja a Figura \ref{codeRandsplit}), de maneira que 
+fosse feita de maneira aleatória.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=.7\textwidth]{codesplit.eps}
+\caption{Algoritmo em Python utilizado para o sorteio das turmas.}
+\label{fig:codeRandsplit}
+\end{figure}
 
 O questionário inicial continha três perguntas, sendo duas objetivas
 permitindo múltiplas opções e uma de duas opções mutuamente excludentes.
@@ -193,7 +200,15 @@ se manteve nos dois grupos) escolheram cursar Ciência da Computação para
 poderem criar seus próprios programas. do que se pode deduzir que havia
 interesse concreto pelo minicurso oferecido.
 
-Quanto a conhecimento prévio, 56\% dos participantes não haviam tido
+\begin{table}[ht]
+\centering
+\caption{O que motivou os alunos a cursar Ciência da Computação}
+\label{tab:tabQuest1}
+\includegraphics[width=1.0\textwidth]{questao1.eps}
+\end{table}
+
+Quanto a conhecimento prévio, como mostra a Tabela \ref{tab:tabQuest2},
+56\% dos participantes não haviam tido
 contato com programação antes do minicurso. Apesar de a proporção ser
 razoavelmente boa, ela não se mostrou constante entre os grupos. já que
 no primeiro grupo essa razão sobe para 73\%, enquanto no segundo cai
@@ -205,6 +220,13 @@ experimento). Cabe lembrar que o que foi questionado foi se havia algum
 conhecimento sobre programação, de modo que não devemos tratar como se
 houvesse "domínio" sobre essas linguagens.
 
+\begin{table}[ht]
+\centering
+\caption{Qual o conhecimento prévio dos alunos sobre Linguagens de Programação}
+\label{tab:tabQuest2}
+\includegraphics[width=.65\textwidth]{questao2.eps}
+\end{table}
+
 Ao indagarmos pelo estilo de jogo favorito, percebeu-se que todos
 marcaram pelo menos um estilo, no que se pode concluir que todos tem
 contato com jogos eletrônicos e gostam de jogar. Jogos de ação, incluindo
@@ -213,20 +235,20 @@ pelos gêneros de Estratégia (incluindo RPG e simulação) e Esporte
 (incluindo corrida e luta), cada um com 35\%. Curiosamente, apenas um
 dos alunos marcou jogos casuais.
 
+\begin{table}[ht]
+\centering
+\caption{Preferência por estilos de jogos eletrônicos}
+\label{tab:tabQuest3}
+\includegraphics[width=.9\textwidth]{questao3.eps}
+\end{table}
+
 O minicurso para a primeira turma ocorreu entre os dias 9 e 13 de junho
 deste, enquanto o da segunda turma ocorreu na semana seguinte, entre os
 dias 16 e 20.
 
 Todos os alunos da primeira turma compareceram e participaram de todo o
 minicurso, já a segunda turma contou com participação de apenas 6 alunos,
-2 dos quais não compareceram para a avaliação.
-
-A apresentação do Py Robocode, com demonstração e explicação do
-código-fonte de um robô apresentado como modelo, levou cerca de 1h, sem
-registro de dúvidas entre os presentes. Todos os alunos copiaram o
-Py Robocode com o modelo para que se preparassem para a competição de
-sexta-feira. Após a avaliação, porém, não houve competição, visto que
-nenhum dos alunos havia escrito um.
+2 dos quais não compareceram para a avaliação (Figura \ref{fig:grafParticipacao}).
 
 \begin{figure}[ht]
 \centering
@@ -235,54 +257,32 @@ nenhum dos alunos havia escrito um.
 \label{fig:grafParticipacao}
 \end{figure}
 
-\begin{table}[ht]
-\centering
-\caption{O que motivou os alunos a cursar Ciência da Computação}
-\label{tab:tabQuest1}
-\includegraphics[width=1.0\textwidth]{questao1.eps}
-\end{table}
+A apresentação do Py Robocode, com demonstração e explicação do
+código-fonte de um robô apresentado como modelo, levou cerca de 1h, sem
+registro de dúvidas entre os presentes. Todos os alunos copiaram o
+Py Robocode com o modelo para que se preparassem para a competição de
+sexta-feira. Após a avaliação, porém, não houve competição, visto que
+nenhum dos alunos havia escrito um.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=.9\textwidth]{g-questao1.eps}
-\caption{Gráfico correspondente à tabela ~\ref{tab:tabQuest1}.}
-\label{fig:grafQuest1}
-\end{figure}
+A avaliação foi elaborada para que fosse possível constatar que os alunos
+haviam assimilado certos conhecimentos. Foram feitas duas provas diferentes,
+uma para cada turma, mas apresentando questões equivalentes em nível de
+complexidade e conhecimento testado. Por exemplo, enquanto na primeira prova
+tínhamos uma questão que pedia o cálculo do IMC, fornecidos peso e altura;
+a segunda prova pedia o cálculo da nota final, dadas a nota da prova final
+e a média. Para ambas, era fornecida na questão a expressão matemática
+capaz de calcular a resposta.
 
-\begin{table}[ht]
-\centering
-\caption{Qual o conhecimento prévio dos alunos sobre Linguagens de Programação}
-\label{tab:tabQuest2}
-\includegraphics[width=.65\textwidth]{questao2.eps}
-\end{table}
+Dispondo de 3 horas, os alunos poderiam utilizar os computadores do
+Laboratório de Informática para testar soluções, mas tinham que escrever
+na prova a resposta para as 5 questões.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=.9\textwidth]{g-questao2.eps}
-\caption{Gráfico correspondente à tabela ~\ref{tab:tabQuest2}.}
-\label{fig:grafQuest2}
-\end{figure}
-
-\begin{table}[ht]
-\centering
-\caption{Preferência por estilos de jogos eletrônicos}
-\label{tab:tabQuest3}
-\includegraphics[width=.9\textwidth]{questao3.eps}
-\end{table}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=.9\textwidth]{g-questao3.eps}
-\caption{Gráfico correspondente à tabela ~\ref{tab:tabQuest3}.}
-\label{fig:grafQuest3}
-\end{figure}
-
-\begin{table}[ht]
-\centering
-\caption{Resultado da avaliação com base no conhecimento demonstrado}
-\label{tab:tabAvalConhec}
-\includegraphics[width=.9\textwidth]{avaliacao-conhecimento.eps}
-\end{table}
+Na resposta, como mostra a Figura \ref{fig:grafAvalConhec}, cerca
+de 36,5\% dos alunos da primeira turma conseguiram manipular corretamente
+strings, enquanto na segunda turma o índice foi de 75\%. Nenhum aluno
+demonstrou conhecimento sobre listas. O uso de estruturas de repetição,
+terceiro e último critério investigado, foi satisfatório para 9\% dos alunos
+da primeira turma, subindo para 25\% da segunda turma.
 
 \begin{figure}[ht]
 \centering
@@ -290,6 +290,34 @@ nenhum dos alunos havia escrito um.
 \caption{Gráfico correspondente à tabela ~\ref{tab:tabAvalConhec}.}
 \label{fig:grafAvalConhec}
 \end{figure}
+
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[width=.9\textwidth]{g-questao1.eps}
+%\caption{Gráfico correspondente à tabela ~\ref{tab:tabQuest1}.}
+%\label{fig:grafQuest1}
+%\end{figure}
+
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[width=.9\textwidth]{g-questao2.eps}
+%\caption{Gráfico correspondente à tabela ~\ref{tab:tabQuest2}.}
+%\label{fig:grafQuest2}
+%\end{figure}
+
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[width=.9\textwidth]{g-questao3.eps}
+%\caption{Gráfico correspondente à tabela ~\ref{tab:tabQuest3}.}
+%\label{fig:grafQuest3}
+%\end{figure}
+
+%\begin{table}[ht]
+%\centering
+%\caption{Resultado da avaliação com base no conhecimento demonstrado}
+%\label{tab:tabAvalConhec}
+%\includegraphics[width=.9\textwidth]{avaliacao-conhecimento.eps}
+%\end{table}
 
 \begin{table}[ht]
 \centering
