@@ -10,7 +10,7 @@
      
 \sloppy
 
-\title{Um Experimento de Arena de Rob\^{o}s para o Ensino de Programa\c{c}\~{a}o em Python}
+\title{O Uso de Arena de Rob\^{o}s para Ensino de Programa\c{c}\~{a}o em Python}
 
 \author{C\'{a}rlisson B. T. Galdino\inst{1}, Alexandre A. Barbosa\inst{2}, \\
   Dyego \'{I}. S. Ferreira\inst{2}, Evandro B. Costa\inst{1}, Baldoino F. S. Neto\inst{1} }
@@ -30,21 +30,19 @@
 \maketitle
 
 \begin{abstract}
-  This meta-paper describes the style to be used in articles and short papers
-  for SBC conferences. For papers in English, you should add just an abstract
-  while for the papers in Portuguese, we also ask for an abstract in
-  Portuguese (``resumo''). In both cases, abstracts should not have more than
-  10 lines and must be in the first page of the paper.
+  Information System, Computer Science and related courses have experienced
+  for years a peculiar difficulty: how to teach Programming to students and
+  get them dedication and motivation? One of the strategies commonly used
+  to solve this problem involves the use of electronic games. This
+  article reports an attempting to use of a robot arena in teaching Python.
 \end{abstract}
      
 \begin{resumo} 
-  Este meta-artigo descreve o estilo a ser usado na confecção de artigos e
-  resumos de artigos para publicação nos anais das conferências organizadas
-  pela SBC. É solicitada a escrita de resumo e abstract apenas para os artigos
-  escritos em português. Artigos em inglês deverão apresentar apenas abstract.
-  Nos dois casos, o autor deve tomar cuidado para que o resumo (e o abstract)
-  não ultrapassem 10 linhas cada, sendo que ambos devem estar na primeira
-  página do artigo.
+  Cursos de Sistema de Informação, Ciência da Computação e afins enfrentam
+  há anos uma dificuldade peculiar: como ensinar Programação aos alunos e
+  obter deles dedicação e motivação? Uma das estratégias comumente pensadas
+  para solucionar este problema envolve o uso de jogos eletrônicos. Este
+  artigo relata a tentativa de uso de uma arena de robôs no ensino de Python.
 \end{resumo}
 
 
@@ -164,7 +162,7 @@ vitória, eliminando os demais.
 
 Definimos que, para este experimento, precisaríamos de alunos de Ciência
 da Computação que ainda não tivessem tido contato com Programação. Desta
-forma, proporíamos um Minicurso de Python à turma de 2014 de Ciência da
+forma, proporíamos um Minicurso de Python a uma turma iniciante de Ciência da
 Computação no Campus Arapiraca da UFAL.
 
 No trato com esses alunos, planejamos o uso de dois grupos: um aprenderia
@@ -208,18 +206,18 @@ interesse concreto pelo minicurso oferecido.
 \label{tab:tabQuest1}
 	\begin{tabular}{|l||r|r||r|}
 		\hline
-		\textbf{Questão 1}	& \textbf{A}	& \textbf{B}	& \textbf{Total} \\
+		\textbf{Questão 1}	& \textbf{Turma A}	& \textbf{Turma B}	& \textbf{Total} \\
 		\hline
 		\hline
 		Criar meus próprios programas	& 6	& 4	& 10 \\
 		\hline
 		Montar uma empresa de tecnologia	& 3	& 3	& 6 \\
 		\hline
-		Saber estruturar uma rede de computadores	& 0	& 1	& 1 \\
+		Identificação com o curso	& 1	& 1	& 2 \\
 		\hline
 		Dar manutenção em computadores	& 0	& 1	& 1 \\
 		\hline
-		Identificação com o curso	& 1	& 1	& 2 \\
+		Saber estruturar uma rede de computadores	& 0	& 1	& 1 \\
 		\hline
 		Trabalhar em área que interesse	& 1	& 0	& 1 \\
 		\hline
@@ -245,7 +243,30 @@ houvesse "domínio" sobre essas linguagens.
 \centering
 \caption{Qual o conhecimento prévio dos alunos sobre Linguagens de Programação}
 \label{tab:tabQuest2}
-\includegraphics[width=.65\textwidth]{questao2.eps}
+	\begin{tabular}{|l||r|r||r|}
+		\hline
+		\textbf{Questão 2}	& \textbf{Turma A}	& \textbf{Turma B}	& \textbf{Total} \\
+		\hline
+		\hline
+		Sem conhecimento prévio	& 8	& 1	& 9 \\
+		\hline
+		Java	& 2	& 1	& 3 \\
+		\hline
+		Pascal	& 1	& 2	& 3 \\
+		\hline
+		C	& 0	& 2	& 2 \\
+		\hline
+		PHP	& 1	& 1	& 2 \\
+		\hline
+		C++	& 0	& 1	& 1 \\
+		\hline
+		JavaScript	& 1	& 0	& 1 \\
+		\hline
+		Python	& 1	& 0	& 1 \\
+		\hline
+		Linguagem não especificada	& 0	& 1	& 1 \\
+		\hline
+	\end{tabular}
 \end{table}
 
 Ao indagarmos pelo estilo de jogo favorito, percebeu-se que todos
@@ -260,7 +281,24 @@ dos alunos marcou jogos casuais.
 \centering
 \caption{Preferência por estilos de jogos eletrônicos}
 \label{tab:tabQuest3}
-\includegraphics[width=.9\textwidth]{questao3.eps}
+	\begin{tabular}{|l||r|r||r|}
+		\hline
+		\textbf{Questão 3}	& \textbf{Turma A}	& \textbf{Turma B}	& \textbf{Total} \\
+		\hline
+		\hline
+		Ação, tiro e plataforma	& 8	& 4	& 12 \\
+		\hline
+		Esporte, corrida e luta	& 3	& 3	& 6 \\
+		\hline
+		Estratégia, RPG e simulação	& 3	& 3	& 6 \\
+		\hline
+		Aventura	& 1	& 0	& 1 \\
+		\hline
+		Casual, musical e puzzle	& 0	& 1	& 1 \\
+		\hline
+		MOBA	& 1	& 0	& 1 \\
+		\hline
+	\end{tabular}
 \end{table}
 
 O minicurso para a primeira turma ocorreu entre os dias 9 e 13 de junho
@@ -269,14 +307,7 @@ dias 16 e 20.
 
 Todos os alunos da primeira turma compareceram e participaram de todo o
 minicurso, já a segunda turma contou com participação de apenas 6 alunos,
-2 dos quais não compareceram para a avaliação (Figura \ref{fig:grafParticipacao}).
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=.7\textwidth]{g-part.eps}
-\caption{Participação dos alunos no Minicurso.}
-\label{fig:grafParticipacao}
-\end{figure}
+2 dos quais não compareceram para a avaliação.
 
 A apresentação do Py Robocode, com demonstração e explicação do
 código-fonte de um robô apresentado como modelo, levou cerca de 1h, sem
@@ -312,19 +343,30 @@ da primeira turma, subindo para 25\% da segunda turma.
 \label{fig:grafAvalConhec}
 \end{figure}
 
-Ao atentarmos para as notas na avaliação (Tabela \ref{tab:tabAvalNotas},
+Ao atentarmos para as notas na avaliação (Tabela \ref{tab:tabAvalNotas}),
 em média as notas da segunda turma (a que foi apresentada ao Py Robocode)
-foi maior. Tanto a maior nota quanto a menor da turma, porém, foram de
-algum aluno da primeira turma.
+foi maior. Tanto a maior nota quanto a menor dentre os participantes, porém,
+foram de algum aluno da turma A.
 
-Assim, constatou-se um desempenho consideravelmente melhor na segunda
-turma, apoiando o uso de uma ferramenta de jogo voltada a Programação.
+Assim, constatou-se um desempenho sensivelmente melhor na segunda
+turma.
 
 \begin{table}[ht]
 \centering
 \caption{Resultado da avaliação com base nas notas}
 \label{tab:tabAvalNotas}
-\includegraphics[width=.9\textwidth]{avaliacao-notas.eps}
+	\begin{tabular}{|l||r|r||r|}
+		\hline
+		\textbf{Avaliação}	& \textbf{Turma A}	& \textbf{Turma B}	& \textbf{Entre todos} \\
+		\hline
+		\hline
+		Menor nota	& 4,0	& 5,7	& 4,0 \\
+		\hline
+		Nota média	& 5,8	& 6,6	& 6,0 \\
+		\hline
+		Nota máxima	& 9,5	& 5,7	& 9,5 \\
+		\hline
+	\end{tabular}
 \end{table}
 
 \section{Discussão dos Resultados}\label{sec:dres}
@@ -377,66 +419,16 @@ tempo para se dedicarem aos robôs.
 
 A fim de confirmar os resultados obtivos, um novo experimento precisa ser
 realizado com outras turmas iniciais de cursos que apresentem Programação
-em sua grade.
+em sua grade, preferencialmente a um grupo maior e com mais tempo, de modo
+que se possa expor e conseguir adesão ao uso da ferramenta de jogo.
 
-Tentando tornar Programação algo ainda mais atrativo, sob a ótica do DGBL,
-há de ser desenvolvido um jogo digital mais complexo, capaz de divertir
-grande parte dos alunos. Para não comprometer a diversão, convém que este
-jogo não seja uma ferramenta pedagógica, apenas fazendo uso de elementos
-de Programação. Segundo \cite{hunicke:2004}, 8 tipos de diversão podem
-ser encontradas em um jogo. A atividade de programar em muito se assemelha
-à solução de Puzzles - ou desafios -, que é o 4º tipo de diversão apresentado
-em seu trabalho. Com isso, um jogo pode ser divertido e equiparável a jogos
-digitais independentes apresentando Programação como apenas um de seus
-elementos. A viabilidade e utilidade de um jogo desse tipo precisa (e deve)
-ser posta a prova.
+Há ainda que ser verificado se há diferença no desempenho de alunos expostos
+a jogos não-pedagógicos, mas que incluem Programação entre seus elementos, em
+relação a alunos que sejam expostos a jogos pedagógicos.
 
-\section{References}\label{sec:ref}
-
-Bibliographic references must be unambiguous and uniform.  We recommend giving
-the author names references in brackets.
-
-The references must be listed using 12 point font size, with 6 points of space
-before each reference. The first line of each reference should not be
-indented, while the subsequent should be indented by 0.5 cm.
+\section{Referência Bibliográfica}\label{sec:ref}
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
 
 \end{document}
-
-
-%\begin{figure}[ht]
-%\centering
-%\includegraphics[width=.9\textwidth]{g-questao1.eps}
-%\caption{Gráfico correspondente à tabela ~\ref{tab:tabQuest1}.}
-%\label{fig:grafQuest1}
-%\end{figure}
-
-%\begin{figure}[ht]
-%\centering
-%\includegraphics[width=.9\textwidth]{g-questao2.eps}
-%\caption{Gráfico correspondente à tabela ~\ref{tab:tabQuest2}.}
-%\label{fig:grafQuest2}
-%\end{figure}
-
-%\begin{figure}[ht]
-%\centering
-%\includegraphics[width=.9\textwidth]{g-questao3.eps}
-%\caption{Gráfico correspondente à tabela ~\ref{tab:tabQuest3}.}
-%\label{fig:grafQuest3}
-%\end{figure}
-
-%\begin{table}[ht]
-%\centering
-%\caption{Resultado da avaliação com base no conhecimento demonstrado}
-%\label{tab:tabAvalConhec}
-%\includegraphics[width=.9\textwidth]{avaliacao-conhecimento.eps}
-%\end{table}
-
-%\begin{figure}[ht]
-%\centering
-%\includegraphics[width=.9\textwidth]{g-notas.eps}
-%\caption{Gráfico correspondente à tabela ~\ref{tab:tabAvalNotas}.}
-%\label{fig:grafAvalNotas}
-%\end{figure}
