@@ -110,7 +110,7 @@ por definir o gênero.
 \begin{figure}[ht]
 \centering
 \includegraphics[width=.8\textwidth]{robotwar.eps}
-\caption{Tela do jogo RobotWar, de 1970, citado na sessão ~\ref{sec:	environ}.}
+\caption{Tela do jogo RobotWar, de 1970, citado na sessão ~\ref{sec:environ}.}
 \label{fig:robotwarfig}
 \end{figure}
 
@@ -177,10 +177,7 @@ foi distribuído pela manhã de três dias seguidos (segunda a quarta-feira)
 e na sexta seria aplicada uma avaliação dos conhecimentos adquiridos.
 
 Além da avaliação final, os alunos responderam a um questionário no início
-do Minicurso para que pudéssemos mensurar seu conhecimento prévio. A inscrição
-dos alunos envolveu o aceite de um Termo de Consentimento, que informava
-aos alunos que eles estariam participando de um experimento que objetivava
-a melhoria do ensino de disciplinas de Programação.
+do Minicurso para que pudéssemos mensurar seu conhecimento prévio.
 
 O minicurso seria aplicado duas vezes: primeiro para o grupo de controle;
 na semana seguinte, para o outro grupo. No caso do segundo grupo, o
@@ -191,15 +188,7 @@ forma, a competição ocorreria após a avaliação, na sexta-feira.
 
 Recebemos 22 respostas ao convite para o Minicurso. Dividimos os 22
 inscritos em duas turmas de 11. Para essa divisão, foi utilizado um
-script em Python (veja a Figura \ref{codeRandsplit}), de maneira que 
-fosse feita de maneira aleatória.
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=.7\textwidth]{codesplit.eps}
-\caption{Algoritmo em Python utilizado para o sorteio das turmas.}
-\label{fig:codeRandsplit}
-\end{figure}
+script simples em Python, de maneira que fosse feita de forma aleatória.
 
 O questionário inicial continha três perguntas, sendo duas objetivas
 permitindo múltiplas opções e uma de duas opções mutuamente excludentes.
@@ -217,7 +206,26 @@ interesse concreto pelo minicurso oferecido.
 \centering
 \caption{O que motivou os alunos a cursar Ciência da Computação}
 \label{tab:tabQuest1}
-\includegraphics[width=1.0\textwidth]{questao1.eps}
+	\begin{tabular}{|l||r|r||r|}
+		\hline
+		\textbf{Questão 1}	& \textbf{A}	& \textbf{B}	& \textbf{Total} \\
+		\hline
+		\hline
+		Criar meus próprios programas	& 6	& 4	& 10 \\
+		\hline
+		Montar uma empresa de tecnologia	& 3	& 3	& 6 \\
+		\hline
+		Saber estruturar uma rede de computadores	& 0	& 1	& 1 \\
+		\hline
+		Dar manutenção em computadores	& 0	& 1	& 1 \\
+		\hline
+		Identificação com o curso	& 1	& 1	& 2 \\
+		\hline
+		Trabalhar em área que interesse	& 1	& 0	& 1 \\
+		\hline
+		Trabalhar em grande empresa na área	& 0	& 1	& 1 \\
+		\hline
+	\end{tabular}
 \end{table}
 
 Quanto a conhecimento prévio, como mostra a Tabela \ref{tab:tabQuest2},
