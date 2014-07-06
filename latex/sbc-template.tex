@@ -56,7 +56,7 @@ obter deles dedicação e motivação?
 
 Se por um lado Programação é a base do curso de Ciência da Computação,
 por outro é uma matéria que exige dedicação \cite{gomes:2007}. Não basta estudar teoria,
-é preciso praticar e, para praticar, é preciso que os alunos se motivem.
+é preciso praticar.
 
 Para despertar o interesse pela disciplina, foram propostas soluções, dentre
 elas o uso de Jogos Eletrônicos, no que \cite{chaudhary:2010} chama de
@@ -70,15 +70,24 @@ desenvolvido este trabalho.
 
 \section{Trabalhos Relacionados} \label{sec:related}
 
+O estudo do uso de jogos no ensino de Programação já foi empreendido por
+diversos pesquisadores, levando a resultados conflitantes. Ainda não há
+consenso em torno do tema. \cite{jesus:2010} diz ainda que "investigar
+formas de melhorar a aprendizagem - e possivelmente minimizar as taxas
+de reprovação e desistência - torna-se um problema relevante para muitas
+universidades que ofertam disciplinas relacionadas a programação
+introdutória". No que se pode considerar válido qualquer esforço que
+objetive tal melhoria.
+
 Um experimento comparando a avaliação de alunos na forma mais tradicional
-com duas outras formas que envolviam um jogo foi feito por \cite{jesus:?}.
+com duas outras formas que envolviam um jogo foi feito por \cite{jesus:2009}.
 Nele, concluiu-se que os alunos em dificuldade expostos ao jogo conseguiram
 progredir, deixando de ter dificuldades. Ademais, nenhuma outra diferença
 foi constatada.
 
 % Casos com Robocode
 
-Com abordagem mais simples \cite{oliveira:?} criou o Arena, que trazia uma
+Com abordagem mais simples \cite{oliveira:2008} criou o Arena, que trazia uma
 nova linguagem de programação inspirada em LOGO e com um modo de funcionamento
 dos robôs semelhante às regras de um Sistema Especialista. Em experimento
 com três grupos - um de controle com novatos, um grupo de novatos com uso
@@ -115,25 +124,20 @@ ação que o robô deverá desempenhar na arena visando a destruir os demais.
 
 Para o nosso experimento, precisávamos de uma ferramenta de "arena de robôs"
 que funcionasse para Python e que fosse facilmente utilizada pelos alunos.
-Foram encontradas e analisadas algumas soluções:
+Foram encontradas e analisadas as soluções 
+PythonRobocode\footnote{http://sourceforge.net/projects/pythonrobocode/}, 
+Python-Robocode\footnote{https://github.com/turkishviking/Python-Robocode},
+pyRobocode\footnote{http://sourceforge.net/projects/pyrobocode/},
+pyDroids\footnote{http://code.google.com/p/pydroids/},
+pybotwar\footnote{https://code.google.com/p/pybotwar/} e
+Py Robocode\footnote{https://launchpad.net/py-robocode},
+sendo esta última escolhida por, apesar de ser de implementação simples,
+funcionar com poucos pré-requisitos.
 
-\begin{itemize}
-  \item \textbf{PythonRobocode} (PythonBots): Utiliza PyGame e apresenta uma interface
-  bem acabada. Em testes, porém, não foi possível chegar ao momento dos
-  combates. O aplicativo travou antes disso. \cite{pythonbots}
-  \item \textbf{Python-Robocode}: Interface gráfica em PyQt4 oferece boas opções,
-  mas muitas ainda não funcionais, o que tende a confundir o usuário. \cite{pythonrc}
-  \item \textbf{pyRobocode}: Ainda não disponibilizou nenhum código \cite{pyrc}
-  \item \textbf{PyDroids}: Ainda não disponibilizaou nenhum código \cite{pydroids}
-  \item \textbf{pybotwar}: Usa PyQt4 e outras bibliotecas que não são facilmente
-  encontradas/instaladas \cite{pybotwar}
-  \item \textbf{Py Robocode}: Criado por Jurgis Pralgauskis e publicado inicialmente
-  em 2009, não oferece funcionalidades via interface gráfica, resumindo-se
-  a montar, quando executado, a arena com todos os robôs que estejam salvos
-  em uma determinada pasta. Apesar de simples, o fato de funcionar sem
-  problemas e sem maiores dependências (utiliza apenas a biblioteca Tkinter)
-  pesou muito em sua escolha \cite{pyrobocode}
-\end{itemize}
+Criado em Jurgis Pralgauskis em 2009, o \textbf{Py Robocode} não oferece
+funcionalidade via interface gráfica, resumindo-se a montar, quando
+executado, a arena com todos os robôs que estejam salvos em uma determinada
+pasta. O combate de robôs é exibido em uma janela, composta com Tkinter.
 
 Para construir um robô no Py Robocode, é necessário criar um arquivo de
 código-fonte em Python e representar o robô através de uma classe que herda
